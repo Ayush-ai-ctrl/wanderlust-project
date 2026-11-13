@@ -1,0 +1,125 @@
+.search-btn {
+  background-color: #fe424d !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.5rem 1rem !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.search-btn:hover {
+  background-color: #e63946 !important;
+  color: #fff !important;
+}
+
+.search-btn i {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.search-input {
+  border-radius: 25px;
+  padding: 0 4rem 0 4rem !important;
+  border: 1px solid #ddd;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 5px rgba(254, 66, 77, 0.4);
+  border-color: #fe424d;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .f-info {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+.dark-mode .f-info-links a,
+.dark-mode .f-info-brand,
+.dark-mode .f-info-social i {
+  color: white !important;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .card-text {
+  color: white;
+}
+
+.dark-mode .filter {
+  color: white;
+}
+
+.dark-mode .text-toggle {
+  border: 1px solid white;
+}
+
+.dark-mode .search-input {
+  background-color: #2d2d2d;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .search-input::placeholder {
+  color: #bbb;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+  color: white !important;
+}
+
+#theme-toggle {
+  background: transparent !important;
+  border: 2px solid #222;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+}
+
+#theme-toggle:hover {
+  background: transparent !important;
+}
+
+.dark-mode #theme-toggle {
+  border: 1px solid white;
+}

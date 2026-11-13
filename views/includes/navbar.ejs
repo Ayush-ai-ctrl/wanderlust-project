@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-md border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass" aria-hidden="true"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listings"><b><i>Explore</i></b></a>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <form class="d-flex" role="search" action="/listings/search" method="GET">
+          <input class="form-control me-2 search-input" type="search" name="query" placeholder="Search Destination" />
+          <button class="btn search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+        <button id="theme-toggle" class="btn btn-dark ms-2">
+          🌙
+        </button>
+        <a class="nav-link" href="/listings/new">Arbnb your home</a>
+        <% if(!currUser) {%>
+          <a class="nav-link " href="/signup"><b><i>Sign Up</i></b></a>
+          <a class="nav-link" href="/login"><b><i>Log in</i></b></a>
+          <% } %>
+            <% if(currUser) {%>
+              <div class="dropdown">
+
+                <a class="profile-link" href="#" role="button" data-bs-toggle="dropdown">
+
+                  <i class="fa-solid fa-circle-user"></i>
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+
+                  <li>
+                    <a class="dropdown-item" href="/profile">
+                      <i class="fa-solid fa-user"></i>
+                      My Profile
+                    </a>
+                  </li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="/logout">
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                      Logout
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+              <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
