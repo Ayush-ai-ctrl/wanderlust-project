@@ -68,9 +68,9 @@ const sessionOptions = {
     },
 };
 
-// app.get("/", (req,res) => {
-//     res.send("Server is Working");
-// });
+app.get("/", (req,res) => {
+    res.send("/listings");
+});
 
 
 
