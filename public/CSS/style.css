@@ -387,3 +387,25 @@ body {
         height: 400px;
     }
 }
+
+/* Navbar को मोबाइल पर फैलने दें ताकि नीचे का कंटेंट दबे नहीं */
+.navbar {
+    min-height: 5rem;
+    height: auto !important;
+}
+
+/* मोबाइल पर खुले हुए मेन्यू को साफ़ बैकग्राउंड दें */
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Dark mode ऑन होने पर मेन्यू का बैकग्राउंड भी काला रहे */
+    body.dark-mode .navbar-collapse {
+        background-color: #1e1e1e;
+    }
+}
